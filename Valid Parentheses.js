@@ -11,27 +11,32 @@ examples
 https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript
 */
 
-const replace = (str) => str.replace(/\((.*)\)/, (matchm, p1) => p1)
+
+// my answer
+const replace = (str) => str.replace(/\(\)/, "")
 
 function validParentheses(parens) {
   if (parens === "") return true
-  if (!/\((.*)\)/.test(parens)) return false
-  // if (parens !== "") {
+  if (!/\(\)/.test(parens)) return false
   return validParentheses(replace(parens))
-  // } else {
-  //   return true
-  // }
 }
 
+// better answer
+
+function validParentheses(parens){
+  var re = /\(\)/;
+  while (re.test(parens)) parens = parens.replace(re, "");
+  return !parens;
+}
+
+// other answer
 
 function validParentheses(parens) {
-  debugger
-  if (parens === ")" || parens === "(") return false
-  if (parens !== "") {
-    return validParentheses(replace(parens))
-  } else {
-    return true
+  var n = 0;
+  for (var i = 0; i < parens.length; i++) {
+    if (parens[i] == '(') n++;
+    if (parens[i] == ')') n--;
+    if (n < 0) return false;
   }
+  return n == 0;
 }
-
-console.log(validParentheses("(())((()())())"))

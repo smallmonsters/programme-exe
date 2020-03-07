@@ -26,7 +26,7 @@ function sortTheInnerContent(words) {
   }).join(" ")
 }
 
-// best answer
+// better answer
 
 function sortTheInnerContent(words){
   return words.replace(/\B\w+(?=\w)/g, x => x.split('').sort().reverse().join(''));
