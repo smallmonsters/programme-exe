@@ -3,12 +3,14 @@
  * 如果没有找到其他解决方案，N.B. Answers应该返回0 !
  * 
  * examples
- *    The robins love hiding amongst the smooth reeds//3---smoo_th ree_ds
+ *    test("The robins love hiding amongst the smooth reeds") //3---smoo_th ree_ds
  * 
- *    It's always worth looking after your friends, even if they've upset you 
+ *    test(It's always worth looking after your friends, even if they've upset you) 
  *    // 7---friend_s, even_
  * 
- *    To avoid the calf, I veered sharply to the left. // 5---cal_f, I ve_ered
+ *    test("To avoid the calf, I veered sharply to the left"). // 5---cal_f, I ve_ered
+ * 
+ * https://www.codewars.com/kata/59da98e86ecd95f06000073d/train/javascript
  * */
 
 // answer
