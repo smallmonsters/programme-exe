@@ -26,7 +26,7 @@ const maze = `....W.
 ......`
 
 
-
+//  other people's answer
 function pathFinder(maze) {
   maze = maze.split('\n').map(r => {
     return [...r]
