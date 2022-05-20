@@ -23,8 +23,9 @@ function validParentheses(parens) {
 
 // better answer
 
-function validParentheses(parens){
+function validParentheses(parens) {
   var re = /\(\)/;
+  // NOTE: while不仅仅可以循环数组
   while (re.test(parens)) parens = parens.replace(re, "");
   return !parens;
 }
