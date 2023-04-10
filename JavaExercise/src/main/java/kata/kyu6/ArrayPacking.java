@@ -2,6 +2,7 @@ package kata.kyu6;
 
 import kata.common.Kata;
 
+//NOTE：不知道题目要干嘛，先放这儿
 public class ArrayPacking extends Kata {
   public static long arrayPacking(int[] arr) {
     long res = 0;

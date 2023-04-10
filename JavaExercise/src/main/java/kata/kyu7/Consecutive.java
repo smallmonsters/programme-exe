@@ -5,10 +5,12 @@ package kata.kyu7;
  * arr包含[4,8,6]，那么输出应该是2，因为需要向数组中添加两个数字(5和7)，使其成为从4到8的连续数字数组
  */
 
+import kata.common.Kata;
+
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Consecutive {
+public class Consecutive extends Kata {
   public static int consecutive(int[] arr) {
     if (arr.length == 0 || arr.length == 1) return 0;
     arr = Arrays.stream(arr).sorted().toArray();
