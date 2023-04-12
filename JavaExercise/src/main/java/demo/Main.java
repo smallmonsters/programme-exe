@@ -1,24 +1,23 @@
 package demo;
 
+import hepler.StaticLinkedList;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class Main {
   public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
 
     //    testSubArr();
     //    testGenericsArr();
+    testStaticLinkedList();
     Parent parent = new Parent();
 
     Method method = parent.getClass().getMethod("say");
     method.invoke(parent);
   }
 
-  //  数组子类demo
+  //  note:数组子类demo
   private static void testSubArr() {
     //    ---------demo1--------
     Parent[] parents1 = new Parent[2];
@@ -40,7 +39,8 @@ public class Main {
     //    sub1[0] = new Parent(); // 不能这么写
   }
 
-  //  泛型数组demo
+  // note:泛型数组demo
+
   static void testGenericsArr() {
     new Double(3.14);
     Integer[] integers = new Integer[10];
@@ -56,6 +56,14 @@ public class Main {
     System.out.println("是否回打印"); // 上面代码有警告，但是还是会输出
   }
 
+  //  note: 静态链表demo
+  static void testStaticLinkedList() {
+    StaticLinkedList node = new StaticLinkedList();
+    node.add(12);
+    node.add(13);
+    node.add(14);
+    System.out.println(node.getNode(1));
+  }
 
 }
 
