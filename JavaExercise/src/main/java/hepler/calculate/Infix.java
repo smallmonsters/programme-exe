@@ -1,8 +1,8 @@
-package hepler;
+package hepler.calculate;
 
 import java.util.Stack;
 
-public class Calculator {
+public class Infix {
   public static int calculate(String expression) {
     Stack<Integer> operandStack = new Stack<>(); // 数字栈
     Stack<Character> operatorStack = new Stack<>();// 运算符栈
