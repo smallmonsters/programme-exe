@@ -1,12 +1,10 @@
 package kata.kyu6;
 
 
-import java.util.*;
-
 public class Main {
   public static void main(String[] args) {
 
-    //    RemoveParentheses.test(false);
+    RemoveParentheses.test();
     //    ArrayPacking.test(false);
     SudokuValidator.test(false);
     //    List list1 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
