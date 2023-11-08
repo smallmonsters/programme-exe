@@ -15,11 +15,7 @@ public class Main {
 //    Method method = parent.getClass().getMethod("say");
 //    method.invoke(parent);
 
-        Person person = new Person("Alice", 25);
-        person.introduce(); // 输出："My name is Alice, and I am 25 years old."
 //        System.out.println(person.name); //报错，
-        System.out.println(person.getName()); // 输出："Alice"
-        System.out.println(person.getAge()); // 输出：25
     }
 
     //  note:数组子类demo
