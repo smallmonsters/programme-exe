@@ -22,18 +22,18 @@ export const isPalindrome = function (x) {
 };
 
 export const isPalindromeBetter = (num) => {
-   /*
-    为什么性能要好些
-    if (num < 0) return false
-    let x = 0
-    let y = num
-    while (y !== 0) {
-      x = x * 10 + y % 10
-      y = Math.floor(y / 10)
-    }
-    return x === num
-  */
-  
+  /*
+   为什么性能要好些
+   if (num < 0) return false
+   let x = 0
+   let y = num
+   while (y !== 0) {
+     x = x * 10 + y % 10
+     y = Math.floor(y / 10)
+   }
+   return x === num
+ */
+
   if (num < 0) return false
   let x = 0, y = num
   while (y > 0) {
